@@ -1,10 +1,5 @@
 
-.input-group-text, .form-control {
-  border: 0px;
-}
-
-
-.flow-background {
+.flow-bg{
   background: url("topimage_spring_pc_2023.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
@@ -19,8 +14,8 @@
   height: 86%;
 }
 
-.bgframe {
-  background-color: rgba(220, 220, 220, 60%);
+.form-field {
+  background-color: #F8F7F9;
 }
 
 .formdrop, .formdrop:hover {
@@ -34,7 +29,7 @@
 
 }
 
-body {
+body, .tiny {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 0.8rem;
 }
@@ -50,7 +45,9 @@ body {
   width: 80%;
 }
 
-
+.form-bg {
+  background: linear-gradient(90deg, rgba(255,255,255,5%) 0%, rgba(252,249,249,90%) 50%, rgba(255,255,255,5%) 100%);
+}
 #site-nav {
   background-color: #E8E8E9;
   margin-top: 200px;
