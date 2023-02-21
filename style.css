@@ -32,8 +32,9 @@ body, .tiny {
 .find, .find:hover {
   background-color: rgb(29,127, 172);
   color: white;
-  width: 80%;
-  height: 120%
+  position: absolute;
+  right: 25%;
+
 }
 
 .head-bg {
