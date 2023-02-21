@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body vh-100>
 
 <!--Navigation Bar -->
 <nav class="navbar navbar-expand-lg bg-light">
@@ -74,7 +74,7 @@
   </div>
 </nav>
 
-<!-- Main form -->
+<!-- Content -->
 <div class="container-fluid flow-bg form">
   <!-- Header -->
   <div class="form-head text-center py-3">
@@ -83,9 +83,9 @@
       </p></div>
   </div>
   <!-- Form -->
-  <div class="form-field w-75 mx-auto px-5 flex-row align-items-center rounded-3 shadow" >
+  <div class="form-field w-75 mx-auto px-5 pb-5 mb-5 flex-row align-items-center rounded-3 shadow" >
     <!-- Search Form-->
-    <div class="row py-1`">
+    <div class="row pt-1">
       <div class="col pt-5">
 
         <div class="input-group">
@@ -95,7 +95,7 @@
               <i class="bi bi-search"></i>
             </button>
                 </span>
-          <input type="text" class="form-control border-start-0 border" placeholder="Type a destination or hotel"></div>
+          <input type="text" class="form-control border-start-0 border py-3" placeholder="Type a destination or hotel"></div>
       </div>
     </div>
 
@@ -103,18 +103,18 @@
       <!-- Check-In Date -->
       <div class="col-xl-4 col-lg-6 pb-auto">
         <div class="d-lg-none">Check-in</div>
-        <input type="date" class="form-control">
+        <input type="date" class="form-control py-3">
       </div>
       <!-- Check-out Date -->
       <div class="col-xl-4 col-lg-6 pb-2">
         <div class="d-lg-none">Check-out</div>
-        <input type="date" class="form-control">
+        <input type="date" class="form-control py-3">
       </div>
 
       <!-- # of Rooms & Occupants -->
       <div class="col-xl-4 col-lg-12">
         <div class="">
-          <button class="btn dropdown-toggle bg-white w-100 border rounded-2" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" id="occupants">
+          <button class="btn dropdown-toggle bg-white w-100 border rounded-2 py-3" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" id="occupants">
             2 adults - 1 room
           </button>
           <div class="dropdown-menu">
@@ -144,15 +144,12 @@
     </div>
     <div class="row text-center pt-3">
       <div class="col">
-        <button type="submit" class="btn find">Find</button>
+        <button type="submit" class="btn find py-2">Find</button>
       </div>
     </div>
   </div>
+  <!-- Site Navigation -->
 
-</div>
-
-<!-- Site Navigation -->
-<div class="container-fluid">
   <div class="row py-4 px-5 text-sm-start text-center" id="site-nav">
     <div class="col-md-3 col-sm-6">
       <p class="fs-6 fw-bold mb-0">Help</p>
@@ -174,15 +171,14 @@
       <p class="py-0 mb-2"><a class="link-dark links text-decoration-none" href="#">Facebook</a></p>
     </div>
   </div>
-</div>
-<!-- Hotels by Prefecture -->
-<div class="px-5" id="prefectures">
+
+  <!-- Hotels by Prefecture -->
   <!-- Four-column list of prefectures only visible on large screens-->
-  <div class="container-fluid my-3 d-none d-lg-block ">
+  <div class="container-fluid px-5 my-3 d-none d-lg-block ">
     <p class="fs-6 fw-bold mt-3 mb-2">Search By Prefecture</p>
     <div class="row" >
       <div class="col">
-        <div class="row justify-content-center mx-auto mh-50">
+        <div class="row justify-content-center mh-50">
           <div class="col-lg-3 col-md-6 col-xs-6">
             <p class="links py-0 my-0"><a href="#" class="link-dark text-decoration-none">Hokkaido Prefecture Hotels</a></p>
             <p class="links py-0 my-0"><a href="#" class="link-dark text-decoration-none">Akita Prefecture Hotels</a></p>
@@ -241,7 +237,7 @@
     </div>
   </div>
   <!-- Dropdown list of prefectures only visible on smaller screens -->
-  <div class="container-fluid my-3 d-lg-none text-center">
+  <div class="my-3 d-lg-none text-center">
     <p class="fs-5 fw-bold mt-3 mb-2">Search by Prefecture</p>
     <div class="dropdown ">
       <a class="btn dropdown-toggle rounded-2 border groups" href="#" role="button" data-bs-toggle="dropdown" >
@@ -309,15 +305,14 @@
       </ul>
     </div>
   </div>
-</div>
-<!-- Hotels by City -->
-<div class="px-5" id="cities">
+
+  <!-- Hotels by City -->
   <!-- Four-column list of cities only visible on large screens-->
-  <div class="container-fluid my-3 d-none d-lg-block ">
+  <div class="container-fluid px-5 my-3 d-none d-lg-block ">
     <p class="fs-5 fw-bold mt-3 mb-2">Top Cities to Visit</p>
     <div class="row" >
       <div class="col">
-        <div class="row justify-content-center mx-auto mh-50">
+        <div class="row justify-content-center mh-50">
           <div class="col-lg-3 col-md-6 col-xs-6">
             <p class="links py-0 my-0"><a href="#" class="link-dark text-decoration-none">Tokyo Hotels</a></p>
             <p class="links py-0 my-0"><a href="#" class="link-dark text-decoration-none">Nagoya Hotels</a></p>
@@ -453,17 +448,15 @@
       </ul>
     </div>
   </div>
-</div>
 
-<!-- Miscellaneous -->
-<div class="px-5" id="new">
-  <div class="container-fluid my-3 d-none d-lg-block">
+  <!-- Miscellaneous -->
+  <div class="container-fluid px-5 my-3 d-none d-lg-block">
     <p class="fs-5 fw-bold mt-3 mb-2">Newly Opened Hotels</p>
-    <p class="links py-0 my-0 px-2"><a href="#" class="link-dark text-decoration-none">Newly Opened Hotels</a></p>
+    <p class="links py-0 my-0"><a href="#" class="link-dark text-decoration-none">Newly Opened Hotels</a></p>
     <p class="fs-5 fw-bold mt-3 mb-2">Yukai resort</p>
-    <p class="links py-0 my-0 px-2"><a href="#" class="link-dark text-decoration-none">Yukai resort</a></p>
+    <p class="links py-0 my-0"><a href="#" class="link-dark text-decoration-none">Yukai resort</a></p>
     <p class="fs-5 fw-bold mt-3 mb-2">Hoshino Resorts KAI</p>
-    <p class="links py-0 my-0 px-2"><a href="#" class="link-dark text-decoration-none">Hoshino Resorts KAI</a></p>
+    <p class="links py-0 my-0"><a href="#" class="link-dark text-decoration-none">Hoshino Resorts KAI</a></p>
   </div>
 
   <div class="container-fluid my-3 d-lg-none">
@@ -476,14 +469,16 @@
         <p class="links py-0 my-0 px-2"><a href="#" class="link-dark text-decoration-none">Hoshino Resorts KAI</a></p></div>
     </div>
   </div>
+
+  <!-- Footer -->
+  <footer class="footer row mt-auto py-3 text-center foot" >
+    <div class="col">
+      <p style="letter-spacing: 1px;" class="my-4">© JTB Corp. All rights reserved.</p>
+      <p style="font-size: 10px;" class="pt-4">as-acmweb-3030</p></div>
+  </footer>
+
 </div>
 
-<!-- Footer -->
-<footer class="footer mt-auto py-3 text-center foot">
-  <div class="container">
-    <p>© JTB Corp. All rights reserved.</p>
-    <p class="tiny">as-pc-3g-acm-web-user-7bb678dc99-flhw7</p></div>
-</footer>
 <!-- Functions for hotel room/occupancy -->
 <script src="hotel-info.js">
 </script>

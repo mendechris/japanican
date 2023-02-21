@@ -16,11 +16,12 @@
 .foot {
   background-color: #2A292D;
   color: white;
+  font-weight: 300;
 }
 
 body, .tiny {
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 0.8rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
 }
 
 .navbar-toggler:hover, .login:hover {
@@ -40,7 +41,6 @@ body, .tiny {
 }
 #site-nav {
   background-color: #E8E8E9;
-  margin-top: 200px;
 }
 
 .groups, .groups:hover {
