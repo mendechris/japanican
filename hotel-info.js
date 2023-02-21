@@ -1,4 +1,4 @@
-const test = document.getElementById('occupants');
+const info = document.getElementById('occupants');
 let room = 1;
 let ppl = 2;
 let child = 0;
@@ -10,13 +10,23 @@ function min(val) {
   return 1;
 }
 
+function prtInfo() {
+  let aInfo = ppl > 1 ? 'adults' : 'adult';
+  let rInfo = room > 1 ? 'rooms' : 'room';
+  let cInfo = child > 1? 'children' : 'child';
+  if(child === 0) {
+    info.innerHTML = `${ppl} ${aInfo} - ${room} ${rInfo}`;
+    return undefined;
+  }
+  info.innerHTML = `${ppl} Ad/${child} Ch - ${room} Rm`;
+}
+
 function addPpl() {
   ppl++;
   prtInfo()
 }
 function remPpl() {
   ppl -= min(ppl);
-
   prtInfo()
 }
 
@@ -44,16 +54,6 @@ function remRm() {
   prtInfo()
 }
 
-function prtInfo() {
-  let aInfo = ppl > 1 ? 'adults' : 'adult';
-  let rInfo = room > 1 ? 'rooms' : 'room';
-  let cInfo = child > 1? 'children' : 'child';
-  if(child === 0) {
-    test.innerHTML = `${ppl} ${aInfo} - ${room} ${rInfo}`;
-    return undefined;
-  }
-  test.innerHTML = `${ppl} Ad/${child} Ch - ${room} Rm`;
-}
 function getppl() {
   return ppl;
 }
