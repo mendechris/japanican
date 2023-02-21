@@ -8,27 +8,14 @@
 .emblue {
   color: rgb(29,127, 172);
 }
-.booking {
-  background-color: #F8F7F9;
-  width: 80%;
-  height: 86%;
-}
-
-
 
 .form-field {
   background-color: #F8F7F9;
 }
 
-.formdrop, .formdrop:hover {
-  background-color: white;
-}
-
-
 .foot {
   background-color: #2A292D;
   color: white;
-
 }
 
 body, .tiny {
@@ -45,10 +32,11 @@ body, .tiny {
   background-color: rgb(29,127, 172);
   color: white;
   width: 80%;
+  height: 120%
 }
 
-.form-bg {
-  background: linear-gradient(90deg, rgba(255,255,255,5%) 0%, rgba(252,249,249,90%) 50%, rgba(255,255,255,5%) 100%);
+.head-bg {
+  background: linear-gradient(90deg, rgba(255,255,255,5%) 0%, rgba(252,249,249,80%) 50%, rgba(255,255,255,5%) 100%);
 }
 #site-nav {
   background-color: #E8E8E9;
@@ -58,3 +46,4 @@ body, .tiny {
 .groups, .groups:hover {
   background-color: #F8F7F9;
 }
+

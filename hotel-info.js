@@ -1,4 +1,4 @@
-const test = document.getElementById('demo');
+const test = document.getElementById('occupants');
 let room = 1;
 let ppl = 2;
 let child = 0;
